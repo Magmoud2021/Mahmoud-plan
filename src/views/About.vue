@@ -1,21 +1,21 @@
 <template>
   <div class="about">
     <h1>This is an about page</h1>
-    <welcom />
-     <Bind />
+    <Welcome />
+    <Bind />
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import welcom from "@/components/welcom.vue";
+import Welcome from "@/components/Welcome.vue";
 import Bind from "@/components/Bind.vue";
 
 export default {
   name: "about",
   components: {
-    welcom,
-    Bind
+    Welcome,
+    Bind,
   },
 };
 </script>

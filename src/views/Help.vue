@@ -1,10 +1,10 @@
 <template>
   <div class="our-help">
     <h1>Help</h1>
-    <p>Lorem ipsum dolor sit ametvoluptate enim dolorum excepturi aut.</p>
-    <img alt="Vue logo" src="../assets/22.jpg" />
-    <life-cycle />
+      <life-cycle />
     
+    <img alt="Vue logo" src="../assets/22.jpg" />
+  
   </div>
 </template>
 
