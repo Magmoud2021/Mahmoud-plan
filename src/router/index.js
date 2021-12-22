@@ -1,7 +1,7 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
 import Home from "../views/Home.vue";
-import Help from "../views/Help.vue";
+import Hooks from "../views/Hooks.vue";
 
 Vue.use(VueRouter);
 
@@ -21,9 +21,9 @@ const routes = [
       import(/* webpackChunkName: "about" */ "../views/About.vue"),
   },
   {
-    path: "/help",
-    name: "help",
-    component: Help,
+    path: "/Hooks",
+    name: "Hooks",
+    component: Hooks,
   },
 ];
 

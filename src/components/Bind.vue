@@ -21,11 +21,23 @@
     <div v-show="divOne">div 1: {{ divOne }}</div>
     <div v-show="divTwo">div 2: {{ divTwo }}</div>
     <form>
-      <input value="divOne" id="divOne" type="radio" v-model="divOne" />
+      <!-- <input value="divOne" id="divOne" type="radio" v-model="divOne" />
       <label for="divOne">divOne</label><br />
       <input value="divTwo" id="divTwo" type="radio" v-model="divTwo" />
-      <label for="divTwo">divTwo</label>
+      <label for="divTwo">divTwo</label> -->
+      
     </form>
+    <p>How are you feeling today?</p>
+  <label>
+    <input type="radio" value="great" v-model="howAreYouFeeling" />
+    great
+  </label>
+  <label>
+    <input type="radio" value="wonderful" v-model="howAreYouFeeling" />
+    wonderful
+  </label>
+      <p>I am also feeling : <em>{{howAreYouFeeling}}</em> today.</p>
+    
   </div>
 </template>
 
@@ -38,6 +50,7 @@ export default {
       radio: "",
       divOne: "",
       divTwo: "",
+          howAreYouFeeling: "great"
     };
   },
 };

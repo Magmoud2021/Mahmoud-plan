@@ -8,8 +8,8 @@
       <router-link tag="li" to="/about">
         <a>About</a>
       </router-link>
-      <router-link tag="li" to="/help">
-        <a>Help</a>
+      <router-link tag="li" to="/Hooks">
+        <a>Hooks</a>
       </router-link>
     </ul>
   </div>
