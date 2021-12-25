@@ -5,6 +5,7 @@
     
     <img alt="Vue logo" src="../assets/22.jpg" />
   
+  
   </div>
 </template>
 
@@ -12,8 +13,9 @@
 import LifeCycle from "../components/LifeCycle.vue";
 
 export default {
-  components: { LifeCycle  },
+  components: { LifeCycle   },
   name: "help",
+ 
 };
 </script>
 <style>
