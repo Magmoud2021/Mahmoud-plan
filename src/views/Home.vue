@@ -12,7 +12,10 @@
       :myarray="cars"
       :myobject="mahmoud"
       :age="age"
+      @mahmoud="writeName"
     />
+    <br />
+    <StateManagement />
   </div>
 </template>
 
@@ -21,9 +24,15 @@
 import HelloWorld from "@/components/HelloWorld.vue";
 import BuiltinDirectives from "@/components/BuiltinDirectives.vue";
 import ComCommunication from "@/components/ComCommunication.vue";
+import StateManagement from "@/components/StateManagement.vue";
 
 export default {
   name: "Home",
+  methods: {
+    writeName(childName) {
+      console.log(childName);
+    },
+  },
   data() {
     return {
       firstName: "mahmoud",
@@ -38,6 +47,14 @@ export default {
     HelloWorld,
     BuiltinDirectives,
     ComCommunication,
+    StateManagement,
   },
 };
 </script>
+<style scoped>
+button {
+  width: 100px;
+  padding: 10px;
+  margin: 0 10px;
+}
+</style>

@@ -5,13 +5,25 @@
     <p>{{ phone }}</p>
     <p>{{ myarray }}</p>
     <p>{{ myobject }}</p>
-    <p>{{age}}</p>
+    <p>{{ age }}</p>
+    <h3>$emit</h3>
+
+    <button @click="fire">child name in console</button>
   </div>
 </template>
 <script>
 export default {
   name: "ComCommunication",
-  data() {},
+  methods: {
+    fire() {
+      this.$emit("mahmoud", this.childName);
+    },
+  },
+  data() {
+    return {
+      childName: "mahmoud salah",
+    };
+  },
   props: {
     name: {
       type: String,
@@ -26,9 +38,9 @@ export default {
     myobject: {
       type: Object,
     },
-    age:{
+    age: {
       type: Number,
-    }
+    },
   },
 };
 </script>

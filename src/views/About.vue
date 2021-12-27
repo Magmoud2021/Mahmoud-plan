@@ -13,6 +13,7 @@ import Bind from "@/components/Bind.vue";
 
 export default {
   name: "about",
+
   components: {
     Welcome,
     Bind,
