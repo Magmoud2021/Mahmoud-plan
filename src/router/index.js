@@ -2,6 +2,7 @@ import Vue from "vue";
 import VueRouter from "vue-router";
 import Home from "../views/Home.vue";
 import Hooks from "../views/Hooks.vue";
+import Form from "../views/Form.vue";
 
 Vue.use(VueRouter);
 
@@ -24,6 +25,11 @@ const routes = [
     path: "/Hooks",
     name: "Hooks",
     component: Hooks,
+  },
+  {
+    path: "/Form",
+    name: "Form",
+    component: Form,
   },
 ];
 

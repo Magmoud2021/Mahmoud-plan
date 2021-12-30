@@ -16,6 +16,8 @@
     />
     <br />
     <StateManagement />
+   
+   
   </div>
 </template>
 
@@ -25,6 +27,7 @@ import HelloWorld from "@/components/HelloWorld.vue";
 import BuiltinDirectives from "@/components/BuiltinDirectives.vue";
 import ComCommunication from "@/components/ComCommunication.vue";
 import StateManagement from "@/components/StateManagement.vue";
+
 
 export default {
   name: "Home",
@@ -48,6 +51,7 @@ export default {
     BuiltinDirectives,
     ComCommunication,
     StateManagement,
+    
   },
 };
 </script>

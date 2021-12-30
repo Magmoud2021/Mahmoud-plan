@@ -11,6 +11,9 @@
       <router-link tag="li" to="/Hooks">
         <a>Hooks</a>
       </router-link>
+        <router-link tag="li" to="/Form">
+        <a>Form</a>
+      </router-link>
     </ul>
   </div>
 </template>
