@@ -1,9 +1,10 @@
 import Vue from "vue";
+
 import VueRouter from "vue-router";
 import Home from "../views/Home.vue";
 import Hooks from "../views/Hooks.vue";
 import Form from "../views/Form.vue";
-
+import TestPage from "../views/TestPage.vue";
 Vue.use(VueRouter);
 
 const routes = [
@@ -31,6 +32,12 @@ const routes = [
     name: "Form",
     component: Form,
   },
+  {
+    path: "/TestPage",
+    name: "TestPage",
+    component:TestPage,
+  },
+ 
 ];
 
 const router = new VueRouter({

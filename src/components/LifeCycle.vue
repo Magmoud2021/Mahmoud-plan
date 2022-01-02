@@ -1,5 +1,6 @@
 <template>
   <div class="lifecycle">
+    <img src="../assets/logo.png" alt="">
     <p>this is vue life cycle hooks alerts</p>
   </div>
 </template>

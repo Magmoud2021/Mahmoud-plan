@@ -1,4 +1,5 @@
-<template>  
+<template>
+
   <form>
     <ValidationObserver>
       <ValidationProvider rules="required" v-slot="{ errors }">
@@ -20,21 +21,28 @@
         <p>{{ errors[0] }}</p>
       </ValidationProvider>
 
-      <ValidationProvider rules="required|confirmed:confirmation" v-slot="{ errors }">
+      <ValidationProvider
+        rules="required|confirmed:confirmation"
+        v-slot="{ errors }"
+      >
         <label for="">password</label>
         <input v-model="value" type="password" />
         <p>{{ errors[0] }}</p>
       </ValidationProvider>
 
       <ValidationProvider v-slot="{ errors }" vid="confirmation">
-        <label for=""> confirmpassword</label>
+        <label for=""> confirmpassword </label>
 
-        <input v-model="confirmation" type="password" />
+       <input v-model="confirmation" type="password" />
+        
         <p>{{ errors[0] }}</p>
       </ValidationProvider>
 
-      <ValidationProvider  >
-      <button class="button" @click="submit">submit</button>
+      <ValidationProvider>
+        <button class="button" @click="submit">submit</button>
+     
+  
+
       </ValidationProvider>
     </ValidationObserver>
   </form>
@@ -51,13 +59,13 @@ export default {
     value: "",
     name: "",
     Phone: "",
-   confirmation:"",
+    confirmation: "",
   }),
-    methods: {
+  methods: {
     submit() {
       alert("On submit");
-    }
-  }
+    },
+  },
 };
 </script>
 <style scoped>
@@ -99,8 +107,12 @@ label {
   padding: 11px 15px;
   margin: 5px auto;
   border-radius: 5px;
-box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;}
-p{
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+p {
   color: red;
 }
+/* .fas fa-eye{
+  background-color: black;
+} */
 </style>

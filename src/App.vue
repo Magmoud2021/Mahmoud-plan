@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <appheader />
+    <NavigationPar />
 
     <router-view />
   </div>
@@ -8,11 +9,14 @@
 
 <script>
 import Appheader from "@/components/global/Appheader.vue";
+import NavigationPar from "@/components/global/NavigationPar.vue";
+
 
 export default {
   name: "App",
   components: {
     Appheader,
+   NavigationPar,
   },
 };
 </script>
