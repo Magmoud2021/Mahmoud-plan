@@ -6,12 +6,13 @@
       <button @click.prevent="switchField">show - hide</button>
     </form>
 
-    <dic class="asd">
+    <div class="asd">
       <h2>toggl the class</h2>
       <button @click="toggleAdvanced($event, 'selected')">1</button>
       <button @click="toggleAdvanced($event, 'selected')">2</button>
       <button @click="toggleAdvanced($event, 'selected')">3</button>
-    </dic>
+    </div>
+ 
   </div>
 </template>
 <script>

@@ -2,6 +2,12 @@
   <div id="app">
     <appheader />
     <NavigationPar />
+    <h3>Access http, Axios</h3>
+    <ul>
+      <li v-for="book in books" :key="book">
+        |{{ book.name }}|{{ book.id}}
+      </li>
+    </ul>
 
     <router-view />
   </div>
@@ -10,13 +16,23 @@
 <script>
 import Appheader from "@/components/global/Appheader.vue";
 import NavigationPar from "@/components/global/NavigationPar.vue";
-
+import axios from "axios";
 
 export default {
   name: "App",
+  data() {
+    return {
+      books: [],
+    };
+  },
   components: {
     Appheader,
-   NavigationPar,
+    NavigationPar,
+  },
+  created() {
+    axios.get("https://vuango-books-api.herokuapp.com/books/").then((res) => {
+      this.books = res.data;
+    });
   },
 };
 </script>
